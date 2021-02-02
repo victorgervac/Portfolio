@@ -29,7 +29,9 @@ const App = () => {
   return (
     <AppContainer>
       <Button onClick={getRepos}>Get Repos</Button>
-      <HeaderText fSize="large">My Portfolio</HeaderText>
+      <HeaderText fSize="large">Victor Gervacio</HeaderText>
+      <HeaderText fSize="small"><Icon name="linkedin"><a href="https://www.linkedin.com/in/victorgervacio/">victorgervacio</a></Icon> </HeaderText>
+      <HeaderText fSize="small"><Icon name="mail">victorgervacio33@gmail.com</Icon> </HeaderText>
       <Segment as={Transparent}>
         <HeaderText>My Projects</HeaderText>
         <Grid>
@@ -99,7 +101,7 @@ const Star = styled.div`
 // when writing within the `` in a styled it is css syntax unless
 // we interpolating than it is js
 const StyledCard = styled(Card)`
-  height: 200px;
+  height: 150px;
   margin-bottom: 12px !important;
 `;
 
