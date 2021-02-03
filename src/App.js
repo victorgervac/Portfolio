@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { Header, Button, Segment, Card, Icon, Grid } from "semantic-ui-react";
+import {Button, Segment, Card, Icon, Grid } from "semantic-ui-react";
 import styled, { keyframes } from "styled-components";
 import HeaderText from "./styledComponents/HeaderText";
 import { COLORS } from "./styles/styles";
@@ -30,10 +30,27 @@ const App = () => {
     <AppContainer>
       <Button onClick={getRepos}>Get Repos</Button>
       <HeaderText fSize="large">Victor Gervacio</HeaderText>
-      <HeaderText fSize="small"><Icon name="linkedin"><a href="https://www.linkedin.com/in/victorgervacio/">victorgervacio</a></Icon> </HeaderText>
-      <HeaderText fSize="small"><Icon name="mail">victorgervacio33@gmail.com</Icon> </HeaderText>
+       <Segment as={Transparent}>
+        <HeaderText fSize="small">Contact</HeaderText>
+      <HeaderText fSize="DEFAULT"><Icon name="linkedin"><a href="https://www.linkedin.com/in/victorgervacio/">victorgervacio</a></Icon> </HeaderText>
+      <HeaderText fSize="DEFAULT" style={{color: 'white'}}><Icon name="mail">victorgervacio33@gmail.com</Icon></HeaderText>
+      <HeaderText fSize="DEFAULT"> <Icon name="phone">(435)7091779</Icon></HeaderText>
+      </Segment>
       <Segment as={Transparent}>
-        <HeaderText>My Projects</HeaderText>
+      <HeaderText fSize="small">Skills</HeaderText>
+      <HeaderText fSize="DEFAULT">HTML • CSS • JavaScript • React • Ruby on Rails • Git • GitHub • MySQL</HeaderText>
+      </Segment>
+      <Segment as={Transparent}>
+      <HeaderText fSize="small">About</HeaderText>
+      <HeaderText fSize="EXTRASMALL"> 
+                                  I graduated from Park City High School.  I was raised in Acapulco, Mexico before moving to Utah since then I have lived here. I love nature, 
+                                  taking long hikes, helping others. Dancing is one of my many passions and I was a scholar at the Wasatch Dance Studio.  
+                                  I have attended many leadership conference and was a part of L.I.A (Latinos In Action) during high school.
+                                  Seeking the challenge of solving real world problems through coding in a team environment. Interested in all areas of development including application front and back end work as well as testing and performance.</HeaderText>
+      </Segment>
+      <Segment as={Transparent}>
+      <HeaderText fSize="small">Experience</HeaderText>
+        <HeaderText fSize="small"><Icon name="github"><a href="https://github.com/victorgervac">Github</a></Icon></HeaderText>
         <Grid>
           <Grid.Row>
             {repos.map((r) => (
@@ -63,7 +80,7 @@ const App = () => {
         </Grid>
       </Segment>
       <Segment as={Transparent}>
-        <HeaderText>Contact</HeaderText>
+        <HeaderText></HeaderText>
       </Segment>
     </AppContainer>
   );
