@@ -18,7 +18,7 @@ export const PADDING = {
 };
 
 export const FONT_SIZES = {
-  EXTRASMALL: ".5em",
+  XSMALL: ".5em",
   DEFAULT: "1.5em",
   SMALL: "2em",
   LARGE: "4em",
